@@ -140,7 +140,7 @@ body {
   display: block;
   font-weight: bold;
 }
-@media (max-width: 320px) {
+@media (max-width: 420px) {
   .element {
     display: none !important;
   }
@@ -215,7 +215,7 @@ p {
 
                  /* container responsiveness */
 
-@media(max-width: 320px) {
+@media(max-width: 420px) {
   .container {
     margin-top: 1rem !important;
     flex-direction: column;
@@ -536,7 +536,7 @@ p {
     /* gap: 0.5rem; */
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 420px) {
   .contact-us {
     flex-direction: column;
     gap: 2rem;
