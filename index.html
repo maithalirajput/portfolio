@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIATHALI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/lottie-web@5.7.4/build/player/lottie.min.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+    <canvas id="starCanvas"></canvas>
+
+    <div id="home" class="header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand education" href="#">MR</a>
+          <ul class="nav justify-content-end element">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-page">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <!-- Three-dot menu -->
+      </nav>
+      <ul class="dropdown-menu" id="dropdownMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#contact-page">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="heading">
+        <div class="intro">
+          <h1 class="line" data-aos="fade-up" data-aos-delay="300">
+            Hi Everyone!,
+          </h1>
+          <h1 class="line" data-aos="fade-up" data-aos-delay="400">
+            I'm <span class="blue">Maithali Rajput,</span>
+          </h1>
+        </div>
+        <p class="line" data-aos="fade-up" data-aos-delay="500">
+          A passionate frontend developer crafting engaging and user-friendly
+          web experiences.
+        </p>
+      </div>
+      <div id="lottie"></div>
+    </div>
+
+    <!-- about -->
+    <div id="about" class="about-container">
+      <h1 class="blue about" data-aos="fade-up" data-aos-delay="200">About Me</h1>
+      <div class="about-info">
+        <div class="info">
+          <h2 class="blue delay-1 sent" data-aos="fade-up" data-aos-delay="300">
+            Hello, I'm
+          </h2>
+          <h2 class="delay-2 sent" data-aos="fade-up" data-aos-delay="400">
+            Maithali Rajput
+          </h2>
+          <br />
+          <p class="delay-3 sent" data-aos="fade-up" data-aos-delay="500">
+            I’m currently pursuing my B.Tech from G.L. Bajaj Institute of
+            Technology and Management, Greater Noida.I’m a frontend web
+            developer with a strong foundation in <span class="blue">HTML, CSS, JavaScript, and
+            frameworks like Express.</span><br><br> I enjoy creating visually appealing,
+            responsive, and user-friendly web interfaces. I'm also familiar with
+            backend technologies like <span class="blue"> and enjoy working on full-stack
+            projects.</span>
+          </p>
+        </div>
+        <div class="about-img">
+          <img
+            data-aos="fade-up"
+            data-aos-delay="500"
+            src="my-pic.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="skill-section">
+        <h2 class="sk" data-aos="fade-up" data-aos-delay="200">
+          Languages & <span class="blue">Frameworks</span>
+        </h2>
+        <div class="skill">
+          <div class="skill-icon" data-aos="fade-up" data-aos-delay="400">
+            <i class="fa-brands fa-node" style="font-size: 80px"></i>
+          </div>
+          <div class="skill-icon" data-aos="fade-up" data-aos-delay="400">
+            <i class="fa-brands fa-js" style="font-size: 100px"></i>
+          </div>
+          <div class="skill-icon" data-aos="fade-up" data-aos-delay="400">
+            <i class="fa-brands fa-java" style="font-size: 100px"></i>
+          </div>
+          <div class="skill-icon" data-aos="fade-up" data-aos-delay="400">
+            <i class="fa-brands fa-python" style="font-size: 100px"></i>
+          </div>
+
+          <div class="skill-icon" data-aos="fade-up" data-aos-delay="600">
+            <i class="fa-brands fa-envira" style="font-size: 100px"></i>
+          </div>
+          <div class="skill-icon" data-aos="fade-up" data-aos-delay="600">
+            <i class="fa-brands fa-html5" style="font-size: 100px"></i>
+          </div>
+          <div class="skill-icon" data-aos="fade-up" data-aos-delay="600">
+            <i class="fa-brands fa-css3-alt" style="font-size: 100px"></i>
+          </div>
+          <div class="skill-icon" data-aos="fade-up" data-aos-delay="600">
+            <i class="fa-brands fa-bootstrap" style="font-size: 100px"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact-page" class="contact-us" data-aos="fade-up" data-aos-delay="400">
+      <div class="contact-content">
+        <div class="contact-img">
+          <img src="contact us.jpeg" alt="contact image" />
+        </div>
+        <div class="contact-heading">
+          <h1><b>Contact me</b></h1>
+        </div>
+        <div class="contact-des">
+          <p>
+            We’d love to hear from you! Whether you have a question about our
+            courses, pricing, features, or anything else, our team is ready to
+            help.
+          </p>
+        </div>
+
+        <div class="contact-logo">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:8859656664">8859656664</a>
+        </div>
+        <div class="contact-logo">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="#">suppor@sdubloom.com</a>
+        </div>
+        <div class="contact-logo">
+          <i class="fa-solid fa-location-dot"></i>
+          <a href="#">Greater Noida</a>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+              width="20"
+            />
+          </a>
+          <a href=" https://www.instagram.com/rajput.mathli12"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+              width="20"
+          /></a>
+          <a href=" https://twitter.com/"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+              width="20"
+          /></a>
+          <a href=" https://www.linkedin.com/maithali-rajput"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+              width="20"
+          /></a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="form-row">
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" />
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" />
+          </div>
+          <div class="email">
+            <input type="email" id="email" name="email" placeholder="Your Email Address" />
+          </div>
+          <textarea
+            id="message" name="message"
+            placeholder="Write your Message"
+            rows="5"
+          ></textarea>
+          <button id="btn" type="submit">Send Message</button>
+        </form>
+        <div id="responseMessage"></div>
+        <!-- Message display area -->
+      </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 MR</p>
+    </footer>
+
+    </div>
+
+    <script>
+      lottie.loadAnimation({
+        container: document.getElementById("lottie"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "https://assets10.lottiefiles.com/packages/lf20_zrqthn6o.json", // replace with your animation link
+      });
+    </script>
+
+    <script>
+      const canvas = document.getElementById("starCanvas");
+      const ctx = canvas.getContext("2d");
+
+      let stars = [];
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        generateStars();
+      }
+
+      function generateStars() {
+        stars = [];
+        const starCount = 200;
+        for (let i = 0; i < starCount; i++) {
+          stars.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            radius: Math.random() * 1.5 + 0.5,
+          });
+        }
+      }
+
+      function drawStars() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (let star of stars) {
+          ctx.beginPath();
+          ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+          ctx.fillStyle = "white";
+          ctx.fill();
+        }
+      }
+
+      function animate() {
+        drawStars();
+        requestAnimationFrame(animate);
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        resizeCanvas();
+        animate();
+      });
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="./script.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>

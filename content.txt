@@ -1,0 +1,11 @@
+| Animation Type    | `data-aos="..."`  | Effect Description            |
+| ----------------- | ----------------- | ----------------------------- |
+| `fade`            | `fade`            | Fades in from transparent     |
+| `fade-up`         | `fade-up`         | Fades in and moves up         |
+| `fade-down`       | `fade-down`       | Fades in and moves down       |
+| `fade-left`       | `fade-left`       | Fades in and moves left       |
+| `fade-right`      | `fade-right`      | Fades in and moves right      |
+| `fade-up-right`   | `fade-up-right`   | Fades in and moves up-right   |
+| `fade-up-left`    | `fade-up-left`    | Fades in and moves up-left    |
+| `fade-down-right` | `fade-down-right` | Fades in and moves down-right |
+| `fade-down-left`  | `fade-down-left`  | Fades in and moves down-left  |
