@@ -9,6 +9,13 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// 👇 Static HTML/CSS/JS serve
+app.use(express.static(__dirname));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 app.post('/send-email', async (req, res) => {
     // console.log('Request body:', req.body);
   const { firstName, lastName, email, message } = req.body;
